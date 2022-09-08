@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+.location {
+  text-align: center;
+  // margin-top: 40px;
+  background: url("/public/images/pattern-bg.png");
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    padding: 16px;
+    color: white;
+  }
+  form {
+    margin-top: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    align-self: center;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      display: flex;
+    }
+    input {
+      padding: 12px;
+      width: 400px;
+      max-width: 100%;
+      outline: none;
+      // border-radius: 7px 0px 0px;
+    }
+    button {
+      padding: 12px;
+      outline: none;
+      // border-radius: 0px 0px 7px;
+      cursor: pointer;
+      background-color: hsl(0, 0%, 17%);
+      color: white;
+      font-size: 16px;
+      border: none;
+    }
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .sub-container {
+    // max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 80%;
+    padding: 22px;
+    box-shadow: 1px 4px 20px 2px #00000040;
+    position: absolute;
+    top: -12px;
+    border-radius: 12px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 16px;
+      width: 100%;
+    }
+    p {
+      color: hsl(0, 0%, 59%);
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    h2 {
+      margin-top: 10px;
+    }
+  }
+}
